@@ -29,21 +29,12 @@ function escribirTexto(texto, callback) {
   cursor.style.display = "inline-block";
   escribiendo = true;
   let i = 0;
+  let velocidad = 18;
+  let acelerado = false;
 
   if (intervalo) clearInterval(intervalo);
 
-  el.onclick = () => {
-    if (escribiendo) {
-      clearInterval(intervalo);
-      el.textContent = texto;
-      el.onclick = null;
-      escribiendo = false;
-      cursor.style.display = "none";
-      if (callback) callback();
-    }
-  };
-
-  intervalo = setInterval(() => {
+  function actualizarTexto() {
     if (i < texto.length) {
       el.textContent += texto[i];
       i++;
@@ -54,7 +45,29 @@ function escribirTexto(texto, callback) {
       el.onclick = null;
       if (callback) callback();
     }
-  }, 18);
+  }
+
+  el.onclick = () => {
+    if (escribiendo) {
+      if (!acelerado) {
+        // Primer clic: acelerar la velocidad 10x
+        acelerado = true;
+        velocidad = 2;
+        clearInterval(intervalo);
+        intervalo = setInterval(actualizarTexto, velocidad);
+      } else {
+        // Segundo clic: mostrar todo el texto
+        clearInterval(intervalo);
+        el.textContent = texto;
+        el.onclick = null;
+        escribiendo = false;
+        cursor.style.display = "none";
+        if (callback) callback();
+      }
+    }
+  };
+
+  intervalo = setInterval(actualizarTexto, velocidad);
 }
 
 function mostrarDecisiones(decisiones) {
