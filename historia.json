@@ -1,0 +1,219 @@
+{
+  "escena1": {
+    "titulo": "ESCENA 1",
+    "speaker": "NARRADOR / KAFKA",
+    "texto": "El día que Kafka decidió tomar un encargo \"no tan complicado\" fue, irónicamente, un día terrible. Eran casi las 7:00 am. El frío pegaba distinto en los tejados, y Silver Wolf seguía sin aparecer.\n\nKafka exhaló, observando cómo su aliento se deshacía en el aire.\n\"Podría estar en casa. Caliente. Dormida.\"\nSe acomodó contra la pared, llevando una mano a sus costillas con disimulo.\n\"Tsk... debería descansar.\"\nSus dedos bajaron hasta la muñeca. El moretón dolía de vez en cuando.\n\"Debería estar en mi casa.\"\nEl tiempo seguía avanzando. Y ella odiaba esperar.",
+    "decisiones": [
+      { "texto": "Tomar el periódico para matar el tiempo", "destino": "escena2" },
+      { "texto": "Entrar a una cafetería cercana", "destino": "escena3" },
+      { "texto": "Irte directamente a la ubicación", "destino": "escena9s" }
+    ]
+  },
+
+  "escena2": {
+    "titulo": "ESCENA 2",
+    "speaker": "NARRADOR / KAFKA / SILVER WOLF",
+    "texto": "El papel crujió suavemente entre sus dedos mientras pasaba las páginas sin interés.\n\"Reformas municipales... irrelevante.\"\nOtra página.\n\"Ganado, premiado... patético.\"\nOtra más.\n\"Este lugar no cambia.\"\n\nKafka pasaba las páginas sin leerlas de verdad, hasta que algo detuvo su mano. Un nombre. Una foto.\nEse cabello rojo que ojalá hubiera podido ignorar.\n\"Himeko Murata, hija del alcalde, anuncia su compromiso con-\"\n\nEl papel crujió entre sus dedos. Kafka no se dio cuenta de cuánta fuerza estaba haciendo hasta que una mano pequeña aterrizó en su hombro y la sacó del trance.\n— Hey.\nLa voz llegó tarde. Silver Wolf estaba detrás de ella, observándola con esa mezcla de aburrimiento y curiosidad.\n— Te ves peor que de costumbre.\nKafka no respondió de inmediato.",
+    "decisiones": [
+      { "texto": "Ignorar el periódico y escuchar a Silver Wolf", "destino": "escena4" },
+      { "texto": "Arrugar el periódico y mantener la calma", "destino": "escena5" },
+      { "texto": "Levantarte e irte sola", "destino": "escena9s" }
+    ]
+  },
+
+  "escena3": {
+    "titulo": "ESCENA 3",
+    "speaker": "NARRADOR / KAFKA / SILVER WOLF",
+    "texto": "El calor de la cafetería era agradable. El olor a café molido le arrancó a Kafka algo parecido a una sonrisa.\nTomó asiento en la mesa del fondo, la de siempre. La que daba vista a la puerta. Al quitarse el guante, el moretón apareció.\nFresco. Más oscuro que ayer.\n\"Sobarlo levemente. Si conserva calor no duele tanto después. Cambiar la venda esta noche, antes de—\"\n\n— Buenas tardes, ¿Qué desea ordenar?\nLa voz la sacó de sus pensamientos. La camarera ya estaba a su lado. Su postura tenía un leve desequilibrio, apenas perceptible. Kafka la observó un segundo de más.\n\"Deja de hacer eso.\"\n\nLe pidió un café. Café con dos cucharadas de azúcar. Lo sabía sin pensarlo, lo había pedido así cien veces. Y luego lo recordó...\n\"A ella no le gustaba el azúcar. Siempre se lo decía.\"\n\nSuspiró. Justo entonces, Silver Wolf ocupó la silla del frente sin avisar, como siempre, dejando caer un sobre delgado sobre la mesa.\n— Llegas tarde — dijo Kafka sin mirarla. Silver Wolf solo atinó a sonreír.",
+    "decisiones": [
+      { "texto": "Abrir el sobre de inmediato", "destino": "escena6" },
+      { "texto": "Pedirle a Silver que explique antes de abrir nada", "destino": "escena7" },
+      { "texto": "¿Cómo sabías que estaría aquí y no afuera?", "destino": "escena8" }
+    ]
+  },
+
+  "escena4": {
+    "titulo": "ESCENA 4",
+    "speaker": "NARRADOR / KAFKA / SILVER WOLF",
+    "texto": "Silver Wolf se sentó en el borde del muro como si el frío no existiera. Sacó un sobre del bolsillo interior de su chaqueta y lo sostuvo en el aire sin entregarlo todavía.\n— Nuevo encargo. Buena paga. Casa grande.\n— ¿Tan simple? — respondió Kafka.\n— Casi. — Silver revisó brevemente el informe. — La mansión Murata. Familia rica, política, el tipo de gente que acumula cosas bonitas y caras. Hay un collar. Piedra rara, bastante cara. La hija lo mandó a hacer, hace unos 5 años.\n\nKafka no dijo nada.\n— Su boda es en dos semanas. — Silver añadió esto último con la misma energía con la que comentaría el clima. — Supongo que alguien quiere interrumpir los preparativos.\n\"La boda.\"\nKafka miró el sobre que Silver aún sostenía en el aire.\n\"Dos semanas.\"\n\n— ¿Algo más? — preguntó. Su voz salió más estable de lo que esperaba.\n— Que no te atrapen. Lo usual. — Silver por fin le extendió el sobre. — ¿Aceptas?",
+    "decisiones": [
+      { "texto": "Tomar el sobre sin decir nada", "destino": "escena9p" },
+      { "texto": "¿Quién paga el encargo?", "destino": "escena9p" },
+      { "texto": "¿La hija del alcalde? ¿Himeko Murata?", "destino": "escena9p" }
+    ]
+  },
+
+  "escena5": {
+    "titulo": "ESCENA 5",
+    "speaker": "NARRADOR / KAFKA / SILVER WOLF",
+    "texto": "El periódico quedó arrugado sobre el banco. Kafka respiró. Una vez. Dos.\n\"Hmm. Este pueblo no cambia.\"\n\nSilver Wolf llegó por detrás con ese paso silencioso suyo que a Kafka nunca dejaba de irritarle. Se detuvo. Miró el periódico. Miró a Kafka. Volvió a mirar el periódico.\n— No pareces alguien que le guste leer — dijo Silver Wolf con una media sonrisa.\n— No sé de qué hablas.\n— Claro que no.\n\nSilver se sentó a su lado, demasiado cómoda para la situación, y sacó el sobre del bolsillo con la misma calma con la que sacaría un caramelo.\n— Nuevo encargo. Mansión Murata. Un collar. La fecha es apretada, la boda es en dos semanas y alguien quiere ese collar antes de—\n— Ya entendí.\n\nSilver se detuvo. La miró de reojo.\n— ¿Algo te incomoda?\n\nNo era una pregunta que Kafka quisiera responder. Así que le quitó el sobre de la mano.\n— No. ¿Todo está dentro del sobre?\n— Sí, hay planos, accesos, y los horarios del servicio. — Silver Wolf hizo una pausa deliberada. — También hay una foto de la dueña del collar. Por si necesitas identificarla, claro.\n\nKafka no abrió el sobre.\n— No la necesito.\nSilver sonrió, pero en su cabeza algo se estaba formulando.",
+    "decisiones": [
+      { "texto": "Guardar el sobre y levantarse", "destino": "escena9p" },
+      { "texto": "Abrir el sobre ahí mismo", "destino": "escena9p" },
+      { "texto": "¿Cuánto pagan?", "destino": "escena9p" }
+    ]
+  },
+
+  "escena6": {
+    "titulo": "ESCENA 6",
+    "speaker": "NARRADOR / KAFKA / SILVER WOLF",
+    "texto": "El sobre no era grueso. Planos, una dirección, un nombre. Kafka lo leyó. Lo volvió a leer.\nLa taza de café seguía ahí, humeando. Ella no la tocó.\n\n— Mansión Murata — dijo en voz baja. No era una pregunta.\n— Familia del alcalde. — Silver apoyó la barbilla en la mano, aburrida. — Un collar. Con una piedra vieja, muy cara, sentimental según el cliente. Hay que tenerlo antes de—\n— La boda. — Kafka terminó la frase sola.\n— En dos semanas, sí. — Silver parpadeó. — ¿Lo sabías?\n\nEl café se estaba enfriando.\n\"Dos cucharadas de azúcar. A ella no le gustaba el azúcar.\"\n\nKafka cerró el sobre despacio. Demasiado despacio para alguien a quien no le importara.\n— ¿Kafka?\n— Acepto el encargo.\n\nSilver la observó un momento. Luego miró la taza intacta. Luego volvió a mirarla.\n— Bien — dijo finalmente, sin añadir nada más.",
+    "decisiones": [
+      { "texto": "Tomarse el café de un sorbo y levantarse", "destino": "escena9c" },
+      { "texto": "Quedarse sentada un minuto más", "destino": "escena9c" },
+      { "texto": "¿Quién hace el encargo?", "destino": "escena9c" }
+    ]
+  },
+
+  "escena7": {
+    "titulo": "ESCENA 7",
+    "speaker": "NARRADOR / KAFKA / SILVER WOLF",
+    "texto": "Silver tomó el sobre de vuelta sin molestarse en protestar. Lo sostuvo entre los dedos como si fuera cualquier cosa.\n— Mansión Murata. Familia rica, tienen muchas cosas caras y realmente ni siquiera saben la mitad de lo que valen. Hay un collar. El cliente quiere recuperarlo antes de—\n\nLa camarera llegó con el café. Kafka lo recibió. Dos cucharadas de azúcar. El olor era bueno. Casi logró distraerla. Casi.\n— ¿Antes de qué? — preguntó.\n— La boda de la hija. — Silver sonrió. — Himeko Murata. Se casa en dos semanas con la jefa de policía. Gran evento. El pueblo entero está distraído, por lo que nos conviene robarlo lo antes posible.\n\nSilencio. El café de Kafka seguía sin tocarse.\n— Nos conviene — Silver Wolf dijo más despacio esta vez, mirándola. — ¿Estás escuchando?\n— Sí.\nNo estaba escuchando.\n\"Himeko. Dos semanas. ¿Será Kuchiba?\"\n\nSilver golpeó la mesa con un dedo.\n— Kafka.\n— Acepto. Dame el sobre.\n\nSilver se lo extendió. Pero no lo soltó del todo cuando Kafka lo tomó.\n— ¿Segura?\n— Suéltalo, Wolfie — Kafka puso su mejor sonrisa enmascarada.\nSilver lo soltó. Y no dijo nada más, aunque por dentro estaba sospechando.",
+    "decisiones": [
+      { "texto": "Abrir el sobre en la mesa", "destino": "escena9c" },
+      { "texto": "Guardarlo y salir de la cafetería", "destino": "escena9c" },
+      { "texto": "Repite lo que dijiste. Todo.", "destino": "escena9c" }
+    ]
+  },
+
+  "escena8": {
+    "titulo": "ESCENA 8",
+    "speaker": "NARRADOR / KAFKA / SILVER WOLF",
+    "texto": "Silver no respondió de inmediato. Tomó el sobre. Lo giró entre los dedos una vez.\n— Podría preguntarte lo mismo, odias el café — dijo al fin, como si eso lo explicara todo.\n— Eso no es una respuesta.\n— En fin, concentrémonos — Silver dejó el sobre sobre la mesa y lo empujó hacia ella. — ¿Quieres el encargo o seguimos con el interrogatorio?\n\nKafka miró el sobre. Miró a Silver.\n\"Odio el café, pero también odio que me lo recuerdes.\"\n\nLo tomó. Dentro había planos limpios, una dirección, un nombre subrayado. Mansión Murata.\n— ¿La hija del alcalde? — dijo Kafka en voz baja.\n— Himeko Murata, sí. Se casa en dos semanas. Gran boda, toda la policía estará en el evento. — Silver hablaba como quien lee una lista del mercado. — El collar es suyo, técnicamente. Alguien quiere que desaparezca antes de la ceremonia.\n\nKafka no levantó los ojos del sobre.\n\"Alguien.\"\n— ¿Quién hace el encargo?\n— Anónimo. — Silver la observó. — ¿Importa?\n— No, solo… Necesito algo más de información y-\nSilver resopló con cansancio, mientras le tiraba el sobre a sus manos.\n— Ya está todo adentro.",
+    "decisiones": [
+      { "texto": "Revisar todo el sobre ahí mismo", "destino": "escena9c" },
+      { "texto": "¿Por qué anónimo?", "destino": "escena9c" },
+      { "texto": "Cerrar el sobre y cambiar de tema", "destino": "escena9c" }
+    ]
+  },
+
+  "escena9p": {
+    "titulo": "ESCENA 9-P",
+    "speaker": "NARRADOR / KAFKA",
+    "texto": "La mansión Murata era exactamente lo que esperaba. Grande. Luminosa. El tipo de lugar que dice en voz alta cuánto dinero tiene la familia sin que nadie tenga que preguntar.\n\nKafka se quedó quieta entre las sombras del jardín, estudiando las ventanas, los accesos, el ritmo del servicio de la casa.\n\"Tres guardias. Rotación cada veinte minutos. Cámara ciega en el ángulo noreste.\"\nSonrió, mientras se ponía sus lentes de contacto. Le ayudaban muchas veces a enmascarar algunas emociones.\n\"Relativamente fácil.\"\n\nEntonces vio otra figura. En la terraza del segundo piso, con una copa en la mano y esa postura recta que Kafka reconoció.\nKuchiba. Alta. Uniforme civil pero porte de policía de todas formas. Hablaba con alguien adentro, de espaldas a la noche.\n\"Oh. No era mentira.\"\n\nKafka la estudió sin moverse. Aunque la tensión en sus hombros se agudizó.\n\"Bien. Kuchiba está en la terraza. Eso despeja el ala este. Puedo—\"\n\nUna voz. Adentro, cerca de la ventana. Kafka la conocía mejor que su propio nombre.\n\"Hmm. Esto va a ser más difícil.\"\n\nHimeko apareció en el marco de la puerta de la terraza, entregándole algo a Kuchiba, riéndose de algo que Kafka no escuchó. Parecía bien.\nKafka no supo si eso la aliviaba o la destruía.\n\"Odio este pueblo.\"",
+    "decisiones": [
+      { "texto": "Rodear hacia el ala este mientras Kuchiba sigue en la terraza", "destino": "escena10p" },
+      { "texto": "Esperar a que Himeko vuelva adentro antes de moverse", "destino": "escena10p" },
+      { "texto": "Cambiar el plan. Entrada por abajo.", "destino": "escena10p" }
+    ]
+  },
+
+  "escena9c": {
+    "titulo": "ESCENA 9-C",
+    "speaker": "NARRADOR / KAFKA",
+    "texto": "La mansión era más grande de lo que parecía en los planos.\nKafka se detuvo en el límite del jardín, donde la luz no llegaba bien, y miró. Los planos estaban bien. Silver siempre hacía bien su trabajo.\n\"Entonces por qué siento que no sé dónde estoy parada.\"\n\nTres guardias. Rotación. Cámara ciega al noreste. Lo mismo que había leído en el sobre, lo mismo que había repasado en el camino.\n\"Lo sé. Lo tengo. Está fácil.\"\n\nPero no estaba del todo bien. Entonces vio a alguien en la terraza. Kuchiba.\nKafka no necesitaba la foto del sobre para saber quién era. La postura lo decía todo. La forma en que ocupaba el espacio como si le perteneciera.\n\"Claro.\"\n\nAlgo se apretó en el pecho de Kafka. No le puso nombre para su tranquilidad.\nKuchiba giró levemente y dijo algo hacia adentro. Sonriendo.\nY entonces Himeko apareció en la puerta. Kafka no respiró.\n\nNo había foto que pudiera haberla preparado para esto. Para verla así, en esa terraza, en esa casa, con esa persona.\n\"Muévete.\"\nNo se movió.\n\"Kafka. Muévete.\"",
+    "decisiones": [
+      { "texto": "Cerrar los ojos un segundo. Respirar. Luego moverse.", "destino": "escena10c" },
+      { "texto": "Moverse ahora antes de que el momento se vuelva más largo.", "destino": "escena10c" },
+      { "texto": "Sacar los planos y revisar la ruta otra vez.", "destino": "escena10c" }
+    ]
+  },
+
+  "escena9s": {
+    "titulo": "ESCENA 9-S",
+    "speaker": "NARRADOR / KAFKA / KUCHIBA / HIMEKO",
+    "texto": "La dirección era correcta. Eso era lo único que tenía.\nKafka estudió la mansión desde afuera con lo que siempre le había funcionado: instinto y tiempo.\n\"Grande. Familiar. Seguridad privada, no pública. Tres guardias visibles, probablemente uno más adentro.\"\nSin planos. Sin horarios. Sin contexto.\n\"No es la primera vez que entras a un lugar sin mapa.\"\n\nNo era la primera vez. Pero algo en este lugar se sentía distinto y no sabía por qué.\nEmpezó a rodear hacia el ángulo noreste buscando el punto ciego que todo jardín grande tiene si sabes mirar. Lo encontró. Y también encontró a Kuchiba.\n\nNo en la terraza. Aquí abajo, en el jardín, caminando despacio con las manos en los bolsillos como alguien que conoce cada rincón de su propia casa.\nSe detuvieron las dos al mismo tiempo. Un segundo de silencio.\n— Vaya — dijo Kuchiba, voz llena de alerta.\nKafka no dijo nada.\n\n— Kafka S. Franz. — Kuchiba sacó las manos de los bolsillos despacio, sin gestos bruscos. — He leído tu expediente. Tres veces. Es entretenido.\nKafka intentó mirar algún lado para buscar una ruta de escape.\n— Por nuestro pasado. Porque sé que no serías tan tonta para entrar en territorio privado sin alguna razón, Sra. Franz.\n\nPausa. Kafka suspiró sin dejar de sonreír.\n— No se preocupe oficial, solo fue un mal entendido...\nKuchiba sonrió. No era una sonrisa amable.\n— Adentro. Ahora. — Hizo una pausa deliberada. — Sra. Franz.\n\"Muy bien, solo debo sacar mis armas e irme-\"\n\nSin embargo, una voz interrumpió su línea de pensamiento.\n— ¡Kuchiba, necesito que vengas! — La voz de Himeko se escuchó desde lo lejos.\n\nKafka vio cómo esta le respondía con cariño, antes de volver su mirada de nuevo en ella.\n— Por el bien de ambas, por los viejos tiempos. Haré como si no hubiera visto nada. Te perdonaré solo esta vez… no esperes que tenga la misma bondad la próxima vez que te vea.\n\nCon esto, se fue con la misma frialdad con que llegó.\n\"No has cambiado nada… pff. Sigue igual… demasiado correcta.\"",
+    "decisiones": [
+      { "texto": "Llamar a Silver Wolf. Necesita replantearse el plan.", "destino": "escena11s" },
+      { "texto": "Evaluar la salida en silencio.", "destino": "escena11s" },
+      { "texto": "Intentar irse y luego reevaluar el lugar.", "destino": "escena11s" }
+    ]
+  },
+
+  "escena10p": {
+    "titulo": "ESCENA 10 — P",
+    "speaker": "NARRADOR / KAFKA / HIMEKO",
+    "texto": "La habitación estaba en el ala este, exactamente donde los planos decían.\nKafka entró sin ruido. Ventana lateral, marco viejo, el tipo de descuido que las casas ricas acumulan porque nunca esperan que alguien se tome la molestia.\n\nEl collar estaba sobre el tocador. Simple. Pequeño. Más discreto de lo que esperaba para una familia como esta.\nLo tomó.\n\n— Lo encontraste rápido.\nKafka no se giró de inmediato. Un segundo. Dos.\n\"Ya sabías que estaba aquí. Ya lo sabías. No es una sorpresa.\"\n\nSe giró. Himeko estaba en el marco de la puerta interior con un arma apuntándole, brazos tensos, esa expresión que Kafka había pasado años aprendiendo a leer. Demasiado controlada.\n— ¿Hmm? Deberías dejar eso — Kafka levantó las manos. — Yo dejaré esto en su lugar y me iré.\n— Claro. — Himeko no se movió del marco. — Qué conveniente.\n\nSilencio. Kafka miró el collar en su mano. Miró a Himeko. Miró el collar otra vez. Ella soltó el collar finalmente, este cayó al suelo.\n\"Mierda mierda mierda…\"\n\n— ¿Cómo sabías que alguien estaba aquí?\nHimeko no respondió de inmediato. Y en ese segundo que tardó, Kafka tuvo su respuesta.\n— El collar pertenece a esta familia — dijo Himeko al fin, con una voz temblorosa. — Estás robando.\n— Pensé que ya no te importaba.\n— Deberías detenerte.\n— Me detuve.\nNinguna de las dos se movió.",
+    "decisiones": [
+      { "texto": "Caminar hacia la ventana mientras ve la duda en Himeko", "destino": "escena11a" },
+      { "texto": "¿Por qué lo mandaste robar, Himeko?", "destino": "escena11a" },
+      { "texto": "Indicarle que ya dejó el collar en el suelo", "destino": "escena11a" }
+    ]
+  },
+
+  "escena10c": {
+    "titulo": "ESCENA 10 — C",
+    "speaker": "NARRADOR / KAFKA / HIMEKO",
+    "texto": "El ala este estaba despejada.\nKafka siguió los planos con más cuidado del necesario, contando cada paso, cada puerta, cada respiración propia.\n\"Enfócate. Es un collar. Entras, lo tomas, sales. Lo has hecho cien veces.\"\nNunca en esta casa.\n\nLo encontró donde debía estar. Sobre el tocador, junto a una foto enmarcada que Kafka deliberadamente no miró.\nExtendió la mano.\n— Ese collar no es tuyo.\n\nKafka retiró la mano. No se giró todavía. Necesitaba ese segundo. Solo ese segundo para construir una máscara entre lo que sentía y lo que iba a mostrar.\n\nSe giró. Himeko estaba en el marco de la puerta, brazos tensos, voz algo nerviosa. Tenía un arma en la mano. Vestido oscuro. Esa mirada que buscaba sus ojos.\n— Himeko.\nFue lo único que salió. En casi un suspiro.\n\n— No te conozco — dijo Himeko.\n— ¿Perdón?\n— No sé quién eres. — Himeko se separó del marco y caminó hacia el tocador con pasos lentos y precisos. — Estás en mi habitación. Eso es un problema.\n\"No te conozco.\"\n\nKafka miró su cara buscando algo, cualquier cosa, una grieta en esa compostura perfecta. La encontró. Pequeña. Casi invisible. En la forma en que Himeko no la miraba directamente a los ojos.",
+    "decisiones": [
+      { "texto": "Seguirle el juego — Tienes razón. No nos conocemos.", "destino": "escena11b" },
+      { "texto": "Para. Soy yo.", "destino": "escena11b" },
+      { "texto": "Tomar el collar y no decir nada", "destino": "escena11b" }
+    ]
+  },
+
+  "escena11a": {
+    "titulo": "ESCENA 11-A",
+    "speaker": "NARRADOR / KAFKA / HIMEKO",
+    "texto": "Ninguna se movió. La habitación era grande pero en ese momento se sentía del tamaño de una caja de cerillas.\n— Deberías irte — dijo Himeko al fin.\n— Debería — respondió Kafka. — Y tú deberías haber encargado esto a alguien que no te conociera.\n— No sé de qué hablas.\n— No eres buena mintiendo, Starlight.\n\nHimeko volvió a apuntarle con el arma, ahora con algo de furia en sus ojos. El apodo se le escapó a Kafka antes que pudiera siquiera pensarlo.\n— Vine a buscar lo que me encargaron — señaló el collar en el suelo. — Eso es todo.\n— Entonces llévatelo y vete.\n— Me estás apuntando, cariño.\n— ¡Solo tómalo y vete!\n\nKafka miró el collar en el suelo. Lo alcanzó sin dejar de mirar a Himeko.\n— ¿En dos semanas? — dijo en voz baja.\nHimeko no respondió.\n— ¿Kuchiba? — Kafka ladeó la cabeza apenas. — ¿Ella por fin te lo propuso?\n— Eso no es asunto tuyo.\n— Claro que no. — Kafka avanzó despacio hacia Himeko. — Solo me pregunto quién manda a robar un collar tan caro, sino es para interrumpir esta bonita boda.\n— En dos semanas.\n— Lo que sea.\n\nSilencio. Himeko miró hacia la puerta. Kafka siguió su mirada, hasta que Himeko dejó el arma.\n— Hay una sala de lectura al fondo del pasillo — dijo en voz muy baja. — Nadie va ahí a esta hora.\n— ¿Me estás invitando a esconderme contigo?\n— Te estoy diciendo dónde no hay guardias.\n— Claro.\n\nPero Himeko ya estaba caminando hacia el pasillo. Y Kafka, a pesar de todo, la siguió. Antes recogió el collar del piso sin que Himeko la viera.\n\nLa sala de lectura era pequeña y oscura. Una ventana. Dos sillones. El olor a papel viejo que tienen los lugares donde nadie lee de verdad.\nHimeko se detuvo junto a la ventana. No se giró.\n— ¿Por qué aceptaste el encargo? — preguntó.\n— Paga bien.\n— Kafka.\n— No me importaba. — Una pausa. — Es solo un trabajo más.\n\nSilencio largo.\n— La boda fue idea de nuestros padres — dijo Himeko al fin, tan bajo que casi no llegó. — Kuchiba es... tú la conoces también.\n— No te pregunté eso.\n— Ya lo sé.\n\nKafka miró su perfil contra la ventana. Esa línea familiar que podría dibujar de memoria en cualquier dimensión.\n\"No lo digas.\"",
+    "decisiones": [
+      { "texto": "¿Quieres casarte con ella?", "destino": "finalA1" },
+      { "texto": "Aprovechar que Himeko mira la ventana y salir en silencio", "destino": "finalA2" },
+      { "texto": "Dejar el collar sobre la mesa y salir", "destino": "finalA3" }
+    ]
+  },
+
+  "escena11b": {
+    "titulo": "ESCENA 11-B",
+    "speaker": "NARRADOR / KAFKA / HIMEKO",
+    "texto": "— Bien — dijo Kafka. — No nos conocemos.\nHimeko parpadeó. No esperaba eso.\n— Exacto. — Se recompuso rápido. — Y aun así estás en mi habitación.\n— Con tu collar. — Kafka lo sostuvo en el aire. — Qué situación tan incómoda para las dos.\n— Para ti. ¡Así que no te muevas!\n— Podrías disparar. — Kafka le pateó el collar. — ¿Por qué no lo haces?\nHimeko no respondió.\n\n— Mira — dijo Kafka, con una calma que empezaba a irritar a Himeko. — Tomo el collar, me voy por donde vine, y tú nunca me viste. Simple.\n— No es tan simple.\n— ¿Por qué no?\n— Porque no confío en ti. — Himeko dio un paso hacia ella. — No sé quién eres, no sé qué haces aquí, y desde luego no voy a quedarme tranquila sabiendo que una criminal se metió a mi cama.\n— Interesante… ¿En tu cama?\n— ¡No es interesante Kafka! — Himeko se tapó la boca.\n— ¿Hmm? Entonces sí me conoces.\nHimeko frunció el ceño.\n— No. Ya no te conozco.\n— Correcto. Entonces ¿por qué mencionaste lo de la cama? — Kafka señaló hacia la cama.\n\nEl silencio que siguió fue absolutamente glorioso.\n— Yo no dije eso — Himeko intentó restarle importancia.\n— Lo dijiste.\n— No lo—\n— Starlight.\n\nFue la primera vez que usó ese apodo desde hacía años. Un apodo que solo Kafka le decía a Himeko en privado. Kafka intentó corregirse pero entonces.\n\nPasos.\nEn el pasillo.\nKuchiba.\n\nKafka lo supo antes de que el sonido terminara de definirse. El ritmo era demasiado seguro, demasiado familiar con el espacio.\nTres segundos. Quizás cuatro.",
+    "decisiones": [
+      { "texto": "Tomar la cara de Himeko y besarla antes de que diga otra palabra", "destino": "finalB1" },
+      { "texto": "Cubrirle la boca y arrastrarla al lado ciego de la habitación", "destino": "finalB2" },
+      { "texto": "Tomar su mano y salir por la ventana", "destino": "finalB3" }
+    ]
+  },
+
+  "escena11s": {
+    "titulo": "ESCENA 11-S",
+    "speaker": "NARRADOR / KAFKA / SILVER WOLF",
+    "texto": "El sobre tenía planos, horarios, accesos. Y una foto.\nKafka la miró el tiempo suficiente para confirmar lo que ya sabía, y luego la guardó cara abajo en el bolsillo interior.\n\"Bien.\"\n\nLa mansión seguía ahí. Kuchiba estaba adentro. Himeko también. Ella tenía un collar que robar y ninguna razón buena para seguir haciéndolo.\nNinguna que pudiera decirse en voz alta, al menos.\n\"Entra. Toma el collar. Sales.\"\n\nKafka esperó a doblar la esquina antes de sacar el teléfono.\nSilver Wolf respondió al segundo tono, como siempre.\n— Necesito el sobre.\nSilencio breve.\n— ¿Qué sobre?\n— El de la mansión Murata. El encargo que me ibas a traer.\n— Ah. Ese. — Pausa. — ¿Y por qué no me lo pediste esta mañana como una persona normal?\n— Wolfie.\n— Bien, bien. — El sonido de teclas al otro lado. — Te lo mando en un segundo. Pero Kafka...\n— ¿Qué?\n— La jefa de policía acaba de dejarte ir. ¿Te conoce?\n\nKafka prefirió colgar en vez de responder. Silver Wolf volvió a llamar.\n— ¿Qué?\n— Insisto… ¿Esta familia tiene alguna conexión contigo?\n— Voy a volver a colgar.\n— ¡Oh dios! Solo estoy intentando entender por qué estás tan rara desde la mañana.\n\"No lo digas.\"\n— No tiene importancia. Solo alguien que conocí en… en Pteruges.\n— Oh.\n\nSilver Wolf finalmente dejó de insistir, pero en su lugar ya estaba buscando información sin decirle a Kafka.",
+    "decisiones": [
+      { "texto": "Entrar por el punto ciego del noreste", "destino": "escena10c" },
+      { "texto": "Buscar otra entrada. Tomarse el tiempo.", "destino": "escena10c" },
+      { "texto": "Llamar a Silver Wolf una vez más antes de entrar", "destino": "escena10c" }
+    ]
+  },
+
+  "finalA1": {
+    "titulo": "FINAL A1 — DEMASIADO HONESTA",
+    "speaker": "NARRADOR / KAFKA / HIMEKO",
+    "texto": "Himeko tardó en responder. Suficiente para que Kafka supiera que la respuesta existía. Solo que costaba.\n— No lo sé — dijo al fin.\n— ¿No lo sabes?\n— Kafka...\n— Sí lo sabes, Himeko.\n\nLa ventana seguía ahí. Himeko seguía sin girarse. Y Kafka esperó porque siempre había sabido esperar cuando se trataba de ella.\n— Quería tiempo — dijo Himeko en voz muy baja.\n— ¿Y el collar?\nUna pausa larga.\n— Era una excusa. — Lo dijo como si costara físicamente. — Una excusa estúpida para retrasar algo que ya está decidido.\n\nKafka miró el collar en su mano. Piedra pequeña. Peso insignificante.\n\"Una excusa.\"\n\n— La boda sigue adelante — dijo Kafka. No era una pregunta.\n— Sí.\n— ¿Y esto?\nHimeko se giró por primera vez.\n— Esto… no cambia nada — Pero dejó de sostenerle la mirada.\n— Lo sé.\n\nGuardó el collar en el bolsillo. Caminó hacia la ventana. La abrió.\n— Kafka.\nSe detuvo sin girarse.\n— Cuídate — dijo Himeko.\n\nKafka salió sin responder. Pero en el tejado, con el frío de nuevo y la ciudad abajo, se permitió un segundo. Solo uno.\n\"Cuídate.\"\n\"Como si todavía tuviera derecho a decirlo.\"\n\n— FIN DEL ARCO 1 —\nLa boda sigue. Algo no cierra. Las dos lo saben.",
+    "decisiones": []
+  },
+
+  "finalA2": {
+    "titulo": "FINAL A2 — COBARDÍA DE LAS DOS",
+    "speaker": "NARRADOR / KAFKA",
+    "texto": "Himeko miraba la calle. Kafka miró la puerta.\n\"Ahora.\"\nSalió sin ruido. Sin palabras. Sin mirar atrás.\n\nEl pasillo estaba despejado. La escalera de servicio también. Afuera el frío llegó de golpe como siempre, honesto y directo, sin pretender ser otra cosa.\nKafka caminó rápido sin correr. El collar pesaba en el bolsillo más de lo que debería para su tamaño.\n\"Trabajo terminado.\"\nUna cuadra. Dos.\n\"Trabajo terminado.\"\nTres.\n\nSe detuvo bajo una farola y abrió la mano. La piedra era pequeña. Casi ordinaria si no sabías lo que representaba.\n\"Ella te dejó ir.\"\n\nNo lo pensó más. Guardó el collar y siguió caminando.\nEsa noche Silver Wolf le mandó un mensaje.\n— ¿Conseguido?\nKafka tardó un momento en responder.\n— Sí.\n— Bien. El cliente confirma entrega para mañana.\n\nKafka miró el mensaje.\n\"El cliente.\"\n— ¿Quién es el cliente, Wolfie?\nTres puntos. Pausa larga.\n— Anónimo. Ya sabes cómo es esto.\n\nKafka dejó el teléfono boca abajo. Afuera empezó a llover.\n\n— FIN DEL ARCO 1 —\nNadie ganó. Nadie perdió del todo. Y el cliente sigue siendo anónimo.",
+    "decisiones": []
+  },
+
+  "finalA3": {
+    "titulo": "FINAL A3 — SIN PRECIO",
+    "speaker": "NARRADOR / KAFKA / HIMEKO",
+    "texto": "El collar hizo un sonido pequeño al tocar la madera. Kafka no se detuvo. Cruzó la sala, abrió la ventana, y salió a la noche sin mirar atrás.\n\n———\n\nHimeko encontró el collar tres minutos después. Estaba sobre la mesa entre los dos sillones. Exactamente donde nadie lo había dejado antes.\nLo tomó. Lo sostuvo un momento en la palma de la mano, mirándolo.\nAfuera la ciudad seguía igual. Ruidosa. Indiferente.\n\nHimeko cerró los dedos sobre el collar despacio.\n\"Una excusa estúpida.\"\nEso era lo que era. Lo había sabido desde el principio.\n\nFue hasta la ventana que Kafka había dejado entreabierta. La calle estaba vacía. Claro que estaba vacía.\nHimeko cerró la ventana. Se sentó en uno de los sillones y miró el collar en su mano durante un tiempo que no supo medir.\n\nLa boda era en dos semanas. Todo estaba decidido. Y aun así.\n\"Eres una tonta.\"\n\n— FIN DEL ARCO 1 —\nEl gesto más honesto de los dos. Y nadie lo vio.",
+    "decisiones": []
+  },
+
+  "finalB1": {
+    "titulo": "FINAL B1 — NO TAN DESCONOCIDAS",
+    "speaker": "NARRADOR / KAFKA / HIMEKO",
+    "texto": "Himeko no se movió. Eso era suficiente.\nLos pasos en el pasillo siguieron su ritmo. Regulares. Seguros. Pasaron frente a la puerta. Continuaron. Se alejaron.\nSilencio.\n\nKafka se separó despacio. Himeko tenía los ojos abiertos. Eso no lo esperaba. Ninguna dijo nada.\nLa habitación era la misma de hace tres minutos pero se sentía completamente distinta.\n\n— Los pasos — dijo Kafka al fin, en voz muy baja.\n— Ya. — La voz de Himeko salió extraña. Demasiado plana. — Ya me di cuenta.\nPausa.\n— El collar — dijo Himeko.\n— ¿Qué?\n— Todavía lo tienes.\nKafka miró su mano. Efectivamente.\n— Sí.\n— Bien. — Himeko dio un paso atrás. Uno solo. — Entonces vete.\n— Himeko...\n— Vete, Kafka.\n\nNo había enojo en su voz. Eso era lo más difícil de leer.\nKafka fue hacia la ventana. La abrió. Se detuvo en el marco.\nHimeko estaba de espaldas. Los brazos cruzados. La postura perfecta de alguien que espera a que el otro se vaya para poder respirar.\n\nKafka salió. La ventana quedó entreabierta detrás de ella.\nHimeko no la cerró en toda la noche.\n\n— FIN DEL ARCO 1 —\nSin resolución. Sin palabras. Con una ventana abierta que las dos ignoraron.",
+    "decisiones": []
+  },
+
+  "finalB2": {
+    "titulo": "FINAL B2 — DEMASIADO CERCA",
+    "speaker": "NARRADOR / KAFKA / HIMEKO",
+    "texto": "El armario era más pequeño de lo que parecía desde afuera. Kafka lo supo en el momento en que cerró la puerta y las dos ocuparon el mismo espacio que claramente no estaba diseñado para dos personas.\nHimeko le quitó la mano de la boca. En silencio, eso sí.\n\nLos pasos afuera se detuvieron frente a la puerta. Kafka contuvo la respiración. Himeko también.\nUn segundo. Dos. La manija no se movió. Los pasos continuaron. Silencio total.\n\nKafka esperó diez segundos más por si acaso. Junto a su oreja podía escuchar la respiración de Himeko, cuidadosa y controlada, el tipo de respiración que se practica para no delatarse.\n— Era Kuchiba — susurró Himeko.\n— Lo sé.\n— Si nos hubiera encontrado...\n— Lo sé.\nPausa microscópica.\n— Estás muy cerca — dijo Himeko.\n— Es un armario.\n— Igualmente.\n\nKafka abrió la puerta con cuidado. El cuarto estaba vacío. Salió primero. Le tendió la mano a Himeko.\nHimeko la miró. La tomó de todas formas. Soltó su mano en cuanto estuvo fuera.\n— Esto no pasó — dijo Himeko, arreglándose el vestido.\n— Completamente de acuerdo.\n— Bien.\n— Bien.\n\nKafka fue hacia la ventana.\n— Kafka.\nSe giró. Himeko miraba el armario con una expresión que no era exactamente dignidad pero que lo intentaba con ganas.\n— Si alguien te pregunta...\n— Nadie me va a preguntar, Himeko.\n— Bien. — Una pausa. — Vete.\n\nKafka sonrió. Apenas. Salió por la ventana. Abajo en la calle se permitió reírse una sola vez, en voz baja, para nadie.\n\"Ella odia este pueblo.\"\n\n— FIN DEL ARCO 1 —\nEl más humano de los seis. Nadie salió con dignidad intacta. Las dos estuvieron bien con eso.",
+    "decisiones": []
+  },
+
+  "finalB3": {
+    "titulo": "FINAL B3 — SECUESTRO VOLUNTARIO",
+    "speaker": "NARRADOR / KAFKA / HIMEKO",
+    "texto": "— Espera qué—\nNo hubo tiempo para más. La ventana. El jardín. La noche.\nHimeko aterrizó sobre el césped con menos gracia de la que habría preferido y con la mano de Kafka todavía en la suya.\n\n— ¿Acabas de secuestrarme? — susurró, con una voz que intentaba ser furiosa y no llegaba del todo.\n— Técnicamente saltaste tú.\n— ¡Me jalaste!\n— Shhh.\n— No me digas shhh, tú—\nKafka le tapó la boca con la mano por segunda vez en diez minutos. Himeko se la quitó por segunda vez. Pero bajó la voz.\n\nCruzaron el jardín pegadas a la sombra de los árboles. Kafka marcaba el ritmo. Himeko seguía sin soltar su mano aunque ambas habían dejado de notar ese detalle hace treinta segundos.\nLa reja trasera cedió fácil. La calle de atrás estaba vacía. Se detuvieron bajo un árbol que no daba suficiente sombra pero era lo que había.\n\n— ¿Adónde vamos? — preguntó Himeko.\n— No lo sé todavía.\n— Fantástico. Me secuestró alguien sin plan.\n— Nadie te secuestró. Puedes irte cuando quieras.\nHimeko miró la calle. Miró a Kafka. Miró la calle otra vez. No se fue.\n\n— El collar — dijo al fin.\n— Lo tengo.\n— Era mío.\n— Era un encargo.\n— Era mío, Kafka.\nKafka sacó el collar del bolsillo y lo sostuvo en el aire entre las dos. Himeko no lo tomó.\n\nEn el teléfono de Kafka llegó un mensaje de Silver Wolf.\n— ¿Todo bien?\nLuego otro.\n— Kuchiba acaba de salir de la mansión. Está buscando a alguien.\nLuego otro.\n— ¿Kafka?\n\nKafka guardó el teléfono.\n— Tenemos que movernos — dijo.\n— ¿Nosotras? — Himeko arqueó una ceja. — No hay ninguna \"nosotras\" aquí.\n— Himeko.\n— ¿Qué?\n— Kuchiba te está buscando.\nPausa.\n— A las dos — añadió Kafka.\n\nHimeko miró el collar que Kafka seguía sosteniendo en el aire. Lo tomó.\n— Odio esto — dijo.\n— Ya lo sé.\n— Odio que tengas razón.\n— También lo sé.\nEmpezaron a caminar.\n\n— FIN DEL ARCO 1 —\nLa boda en pausa. Kuchiba en marcha. Las dos en la misma calle. El arco 2 empieza aquí.",
+    "decisiones": []
+  }
+}
