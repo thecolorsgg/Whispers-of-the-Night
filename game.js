@@ -3,7 +3,7 @@ let escribiendo = false;
 let intervalo = null;
 
 async function iniciar() {
-  const respuesta = await fetch("./historia.json");
+  const respuesta = await fetch("historia.json");
   historia = await respuesta.json();
   
   // Cargar escena guardada o comenzar desde el principio
