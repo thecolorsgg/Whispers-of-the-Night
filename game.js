@@ -1,34 +1,95 @@
 let historia = {};
 let escribiendo = false;
 let intervalo = null;
+let escenaActual = "escena1";
 
 async function iniciar() {
   const respuesta = await fetch("historia.json");
   historia = await respuesta.json();
-  
-  // Cargar escena guardada o comenzar desde el principio
+
   const escenaGuardada = localStorage.getItem("susurros_escena");
-  const escenaInicial = escenaGuardada || "escena1";
-  
-  cargarEscena(escenaInicial);
+  const tituloGuardado = localStorage.getItem("susurros_titulo");
+
+  if (escenaGuardada && historia[escenaGuardada]) {
+    actualizarLabelGuardado(tituloGuardado, "guardado");
+    cargarEscena(escenaGuardada);
+  } else {
+    actualizarLabelGuardado(null, "ninguno");
+    cargarEscena("escena1");
+  }
 }
 
 function cargarEscena(id) {
   const escena = historia[id];
   if (!escena) return;
 
-  // Guardar progreso automáticamente
   escenaActual = id;
-  localStorage.setItem("susurros_escena", id);
 
   document.getElementById("speaker").textContent = escena.speaker || "";
   document.getElementById("escena-label").textContent = escena.titulo || "";
   document.getElementById("botones").innerHTML = "";
   document.getElementById("decisiones-label").textContent = "// ELIGE TU ACCIÓN";
 
+  actualizarEstadoGuardado();
+
   escribirTexto(escena.texto, () => {
     mostrarDecisiones(escena.decisiones);
   });
+}
+
+function actualizarLabelGuardado(titulo, estado) {
+  const label = document.getElementById("guardado-label");
+  label.className = "";
+
+  if (!titulo) {
+    label.textContent = "// SIN GUARDADO";
+  } else if (estado === "pendiente") {
+    label.textContent = `// GUARDADO: ${titulo} — progreso sin guardar`;
+    label.className = "pendiente";
+  } else {
+    label.textContent = `// GUARDADO: ${titulo}`;
+    label.className = "activo";
+  }
+}
+
+function actualizarEstadoGuardado() {
+  const escenaGuardada = localStorage.getItem("susurros_escena");
+  const tituloGuardado = localStorage.getItem("susurros_titulo");
+
+  if (!tituloGuardado) {
+    actualizarLabelGuardado(null, "ninguno");
+    return;
+  }
+
+  if (escenaGuardada === escenaActual) {
+    actualizarLabelGuardado(tituloGuardado, "guardado");
+  } else {
+    actualizarLabelGuardado(tituloGuardado, "pendiente");
+  }
+}
+
+function guardar() {
+  const escena = historia[escenaActual];
+  if (!escena) return;
+
+  localStorage.setItem("susurros_escena", escenaActual);
+  localStorage.setItem("susurros_titulo", escena.titulo);
+
+  actualizarLabelGuardado(escena.titulo, "guardado");
+
+  const btn = document.getElementById("btn-guardar");
+  btn.textContent = "[ GUARDADO ✓ ]";
+  setTimeout(() => {
+    btn.textContent = "[ GUARDAR ]";
+  }, 2000);
+}
+
+function reiniciar() {
+  if (!confirm("¿Reiniciar desde el principio? Se perderá el progreso guardado.")) return;
+  localStorage.removeItem("susurros_escena");
+  localStorage.removeItem("susurros_titulo");
+  actualizarLabelGuardado(null, "ninguno");
+  cargarEscena("escena1");
 }
 
 function escribirTexto(texto, callback) {
@@ -59,13 +120,11 @@ function escribirTexto(texto, callback) {
   el.onclick = () => {
     if (escribiendo) {
       if (!acelerado) {
-        // Primer clic: acelerar la velocidad 10x
         acelerado = true;
         velocidad = 2;
         clearInterval(intervalo);
         intervalo = setInterval(actualizarTexto, velocidad);
       } else {
-        // Segundo clic: mostrar todo el texto
         clearInterval(intervalo);
         el.textContent = texto;
         el.onclick = null;
@@ -92,23 +151,6 @@ function mostrarDecisiones(decisiones) {
     };
     contenedor.appendChild(btn);
   });
-}
-
-let escenaActual = "escena1";
-
-function guardar() {
-  localStorage.setItem("susurros_escena", escenaActual);
-  const btn = document.getElementById("btn-guardar");
-  btn.textContent = "[ GUARDADO ✓ ]";
-  setTimeout(() => {
-    btn.textContent = "[ GUARDAR ]";
-  }, 2000);
-}
-
-function reiniciar() {
-  if (!confirm("¿Reiniciar desde el principio? Se perderá el progreso guardado.")) return;
-  localStorage.removeItem("susurros_escena");
-  cargarEscena("escena1");
 }
 
 iniciar();

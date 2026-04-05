@@ -104,15 +104,28 @@ body {
   gap: 12px;
 }
 
-.boton:hover {
-  background: #00ff8815;
-  border-color: #00ff88cc;
-  color: #ffffff;
+#savebar {
+  background: #050505;
+  border-bottom: 1px solid #00ff8815;
+  padding: 6px 20px;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.boton .idx {
-  color: #00ff8866;
-  min-width: 20px;
+#guardado-label {
+  color: #00ff8844;
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+
+#guardado-label.activo {
+  color: #00ff88aa;
+}
+
+#guardado-label.pendiente {
+  color: #ffcc4466;
 }
 
 #topbar-botones {
@@ -132,10 +145,24 @@ body {
   padding: 0;
 }
 
-#btn-guardar:hover {
-  color: #00ff88;
+#btn-guardar:hover { color: #00ff88; }
+#btn-reiniciar:hover { color: #ff4444; }
+
+.boton {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.15s;
+  display: flex;
+  gap: 12px;
 }
 
-#btn-reiniciar:hover {
-  color: #ff4444;
+.boton:hover {
+  background: #00ff8815;
+  border-color: #00ff88cc;
+  color: #ffffff;
+}
+
+.boton .idx {
+  color: #00ff8866;
+  min-width: 20px;
 }
