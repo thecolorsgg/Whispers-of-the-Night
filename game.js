@@ -3,14 +3,23 @@ let escribiendo = false;
 let intervalo = null;
 
 async function iniciar() {
-  const respuesta = await fetch("historia.json");
+  const respuesta = await fetch("./historia.json");
   historia = await respuesta.json();
-  cargarEscena("escena1");
+  
+  // Cargar escena guardada o comenzar desde el principio
+  const escenaGuardada = localStorage.getItem("susurros_escena");
+  const escenaInicial = escenaGuardada || "escena1";
+  
+  cargarEscena(escenaInicial);
 }
 
 function cargarEscena(id) {
   const escena = historia[id];
   if (!escena) return;
+
+  // Guardar progreso automáticamente
+  escenaActual = id;
+  localStorage.setItem("susurros_escena", id);
 
   document.getElementById("speaker").textContent = escena.speaker || "";
   document.getElementById("escena-label").textContent = escena.titulo || "";
@@ -83,6 +92,23 @@ function mostrarDecisiones(decisiones) {
     };
     contenedor.appendChild(btn);
   });
+}
+
+let escenaActual = "escena1";
+
+function guardar() {
+  localStorage.setItem("susurros_escena", escenaActual);
+  const btn = document.getElementById("btn-guardar");
+  btn.textContent = "[ GUARDADO ✓ ]";
+  setTimeout(() => {
+    btn.textContent = "[ GUARDAR ]";
+  }, 2000);
+}
+
+function reiniciar() {
+  if (!confirm("¿Reiniciar desde el principio? Se perderá el progreso guardado.")) return;
+  localStorage.removeItem("susurros_escena");
+  cargarEscena("escena1");
 }
 
 iniciar();

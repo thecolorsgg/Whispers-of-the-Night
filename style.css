@@ -96,6 +96,46 @@ body {
   font-family: 'Share Tech Mono', monospace;
   font-size: 13px;
   padding: 12px 16px;
-  text-align: left
+  text-align: left;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.15s;
+  display: flex;
+  gap: 12px;
 }
 
+.boton:hover {
+  background: #00ff8815;
+  border-color: #00ff88cc;
+  color: #ffffff;
+}
+
+.boton .idx {
+  color: #00ff8866;
+  min-width: 20px;
+}
+
+#topbar-botones {
+  display: flex;
+  gap: 12px;
+}
+
+#btn-guardar, #btn-reiniciar {
+  background: transparent;
+  border: none;
+  color: #00ff8866;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: color 0.15s;
+  padding: 0;
+}
+
+#btn-guardar:hover {
+  color: #00ff88;
+}
+
+#btn-reiniciar:hover {
+  color: #ff4444;
+}
