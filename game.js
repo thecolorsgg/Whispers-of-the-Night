@@ -3,6 +3,25 @@ let escribiendo = false;
 let intervalo = null;
 let escenaActual = "escena1";
 
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+function sonarClic() {
+  try {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.type = "sine";
+    osc.frequency.setValueAtTime(300, audioCtx.currentTime);
+    gain.gain.setValueAtTime(0.09, audioCtx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.08);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + 0.08);
+  } catch (error) {
+    console.warn("Error al reproducir sonido:", error);
+  }
+}
+
 async function iniciar() {
   const respuesta = await fetch("historia.json");
   historia = await respuesta.json();
@@ -119,6 +138,11 @@ function escribirTexto(texto, callback) {
 
   el.onclick = () => {
     if (escribiendo) {
+      // Reanudar AudioContext si está suspendido
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      sonarClic();
       if (!acelerado) {
         acelerado = true;
         velocidad = 2;
@@ -147,6 +171,11 @@ function mostrarDecisiones(decisiones) {
     btn.innerHTML = `<span class="idx">[${i + 1}]</span><span>${d.texto}</span>`;
     btn.onclick = () => {
       if (escribiendo) return;
+      // Reanudar AudioContext si está suspendido
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      sonarClic();
       cargarEscena(d.destino);
     };
     contenedor.appendChild(btn);
